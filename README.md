@@ -16,11 +16,12 @@
 Build metrics and detect the potential fraud records
 ##
 ## Outline of Approach
-##### Step1: Data Cleaning (
+##### Step1: Data Cleaning
 * Data Quality Report (DQR)
 * Create 50 more insightful variables based on original variables
 * Partition based on metrics
-* Dealing with missing value, Z-scale)
+* Dealing with missing value, Z-scale
+
 ##### Step2: PCA (Principle Componenet Analysis)
 ##### Step3: Auto-encoder(Neural Network Algorithm)
 
