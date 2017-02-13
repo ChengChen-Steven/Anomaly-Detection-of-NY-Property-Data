@@ -14,7 +14,7 @@ Applying fraud analysis in the NY Property Tax dataset with 1048575 observations
 ##
 ## Purpose of the project
 Build metrics and detect the potential fraud records
-====
+##
 ## Outline of Approach
 #### Step1: Data Cleaning (Create 50 more insightful variables based on original variables, Partition based on metrics, Dealing with missing value, Z-scale)
 #### Step2: PCA (Principle Componenet Analysis)
