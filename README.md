@@ -29,11 +29,13 @@
 ###### 1. Euclidean Distance
 * Based on projection of original features on the 13 PCs' directions
 * Calculate the euclidean distance to the origin as the fraud score
+
 ###### 2. Auto-encoder(Neural Network Algorithm)
 * Use h2o package to implement auto-encoder
 * Output results from the PCA serves as the input
 * Set two hidden layers, both five features 
 * Calculate MSE of each record as the fraud score
+
 ###### 3. Comparison
 * 76% overlapping in the highest 10000 fraud scores between Euclidean Distance and Auto-encoder           
 
