@@ -13,17 +13,29 @@
 ##### Details variables: RECORD, BBLE, BLOCK, LOT, EASEMENT, OWNER, BLDGCL, TAXCLASS, LTFRONT, LTDEPTH, STORIES, FULLVAL, AVLAND, AVTOT, EXLAND, EXTOT, EXCD1, STADDR, ZIP, EXMPTCL, BLDFRONT, BLDDEPTH, AVLAND2, EXLAND2, EXLAND2, EXTOT2, EXCD2, PERIOD, YEAR, VALTYPE.
 ##
 ## Purpose of the project
-Build metrics and detect the potential fraud records
+* Build metrics and detect the potential fraud records
 ##
 ## Outline of Approach
 ##### Step1: Data Cleaning
 * Data Quality Report (DQR)
 * Create 50 more insightful variables based on original variables
-* Partition based on metrics
+* Partition based on 7 key metrics
 * Dealing with missing value, Z-scale
 
 ##### Step2: PCA (Principle Componenet Analysis)
-##### Step3: Auto-encoder(Neural Network Algorithm)
+* PCA (Visualization, Decide to use 13 PCs)
+
+##### Step3: Set Fraud Score: 
+###### 1. Euclidean Distance
+* Based on projection of original features on the 13 PCs' directions
+* Calculate the euclidean distance to the origin as the fraud score
+###### 2. Auto-encoder(Neural Network Algorithm)
+* Use h2o package to implement auto-encoder
+* Output results from the PCA serves as the input
+* Set two hidden layers, both five features 
+* Calculate MSE of each record as the fraud score
+###### 3. Comparison
+* 76% overlapping in the highest 10000 fraud scores between Euclidean Distance and Auto-encoder           
 
 ====
 Keep updating...
