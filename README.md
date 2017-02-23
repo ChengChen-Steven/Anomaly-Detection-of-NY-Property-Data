@@ -39,5 +39,8 @@
 ###### 3. Comparison
 * 76% overlapping in the highest 10000 fraud scores between Euclidean Distance and Auto-encoder           
 
+###### 4. Discover insights
+* Check the 30 records with top fraud scores and identify fraud patterns within them.
+
 ====
 Keep updating...
