@@ -15,6 +15,7 @@
 ## Purpose of the project
 * Build metrics and detect the potential fraud records
 ##
+
 ## Outline of Approach
 ##### Step1: Data Cleaning
 * Data Quality Report (DQR)
